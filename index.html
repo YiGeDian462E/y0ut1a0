@@ -8,7 +8,14 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 40%;
+    width: 20%;
+  }
+  form {
+    text-align: center;
+  }
+  textarea {
+    width: 20%;
+    margin-bottom: 10px;
   }
 </style>
 
@@ -24,8 +31,8 @@ function showMessage() {
 
 <img src="cat.jpg" class="center-image">
 
-<form onsubmit="showMessage(); return false;">
-  <textarea name="message" placeholder="在这里留言" required></textarea>
+<form onsubmit="showMessage(); return false;" class="center-content">
+  <textarea name="message" placeholder="在这里留言"required></textarea>
   <br>
   <input type="submit" value="提交">
 </form>
